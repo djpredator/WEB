@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// 
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color", "orange");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color", "green");
+  });
+});
+</script>
+</head>
+<body>
+    Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+
+<!--<p id="p1">This is a paragraph.</p> -->
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/
+			ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style type="text/css">
+#panel, #flip {
+	padding: 5px;
+	text-align: center;
+	background-color: white;
+	border: solid 2px green;
+	}
+#panel {
+	padding: 50px;
+	width:100px;
+	display:none;
+	color: green;
+	font-style: italic;
+	}
+#flip{
+	width:190px;
+	}	
+</style>
+</head>
+<body>
+<h1 align="center">Silde Down Example</h1>
+<center>
+<div id="flip">Slide down Effect</div>
+<div id="panel">Welcome to GoDigital Consulting LLP.</div>
+</center>
+<script type="text/javascript">
+	$("#flip").click(function(){
+		$("#panel").slideDown("slow");
+	});
+</script>
+</body>
+</html>
