@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD In form and Table
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Email Id</label>
+                        <input type="text" name="empCode" id="emailId">
+                    </div>
+                    <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div>
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+
+
+        </tr>
+    </table>
+    <h4 class="header-title" class="ion-align-self-center">Button for Downloading</h4>
+    <table>
+        <tr>
+            <td>
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th> Full Name</th>
+                            <th> Email Id</th>
+                            <th> Salary</th>
+                            <th> City</th>
+                            <th>Operation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+                    </tbody>
+
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+
+    <!-- <script src="pdfmake/pdfmake.min.js"></script>
+    <script src="pdfmake/vfs_fonts.js"></script> -->
+</body>
+
+</html>
